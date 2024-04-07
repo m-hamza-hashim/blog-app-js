@@ -1,0 +1,72 @@
+/* nav  */
+@font-face {
+    font-family: lobster;
+    src: url(fonts/Lobster-Regular.ttf);
+}
+
+.nav {
+    height: 61px;
+    background-color: #ffc141;
+    color: white;
+}
+
+body {
+    margin: 0;
+}
+
+.nav > p {
+    margin: 0;
+    font-family: lobster;
+    font-size: 31px;
+    text-transform: uppercase;
+    margin-left: 19px;
+    padding-top: 7px;
+}
+
+/* content  */
+#editor-box1 {
+    padding: 20px;
+}
+
+#post {
+    padding: 20px;
+}
+
+.row {
+    margin: 0;
+}
+
+/* #post-card {
+    border: 1px solid red;
+    height: 100px;
+} */
+
+@media only screen and (max-width: 576px) {
+    .nav {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+#editor-box2 {
+    margin-bottom: 30px;
+}
+
+#editor {
+    font-size: 18px;
+}
+
+.btn {
+    width: 100%;
+    background-color: #ffc141;
+}
+
+#post-card {
+    background-color: #ffc141;
+    font-size: 18px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+}

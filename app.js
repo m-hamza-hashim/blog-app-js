@@ -67,8 +67,8 @@ var loginEmail = document.getElementById("loginName");
 var userLoginData = JSON.parse(window.localStorage.getItem("userData"));
 
 loginForm.addEventListener("submit", function(event) {
+    event.preventDefault();
     if (!userLoginData) {
-        event.preventDefault();
         const Toast = Swal.mixin({
             toast: true,
             position: "top-end",
@@ -86,14 +86,18 @@ loginForm.addEventListener("submit", function(event) {
           });
     }
     else if (loginEmail.value !== userLoginData.email || loginPassword.value !== userLoginData.password) {
-        event.preventDefault();
         loginEmail.focus();
         loginEmail.value = "";
         loginPassword.value = "";
         loginEmail.style.backgroundColor = "rgb(254 220 220)";
         loginEmail.setAttribute("placeholder", "Incorrect email or password");
     }
+
+    window.location.href = "/homepage.html";
 });
+
+
+
 
 
 
