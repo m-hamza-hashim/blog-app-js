@@ -1,3 +1,4 @@
+// content 
 const quill = new Quill('#editor', {
     theme: 'snow'
   });
@@ -5,7 +6,6 @@ const quill = new Quill('#editor', {
 var postBtn = document.getElementById("post-btn");
 var editor = document.getElementById("editor");
 var post = document.getElementById("post");
-// var counter = 
 var counterData = Number(window.localStorage.getItem("counter"));
 
 if (counterData) {
