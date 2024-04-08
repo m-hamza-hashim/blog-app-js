@@ -8,6 +8,16 @@
     height: 61px;
     background-color: #ffc141;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+}
+
+#logout-btn {
+    height: 35px;
+    background-color: white;
+    color: #ffc141;
 }
 
 body {
@@ -19,8 +29,7 @@ body {
     font-family: lobster;
     font-size: 31px;
     text-transform: uppercase;
-    margin-left: 19px;
-    padding-top: 7px;
+    /* padding-top: 7px; */
 }
 
 /* content  */
@@ -36,12 +45,12 @@ body {
     margin: 0;
 }
 
-@media only screen and (max-width: 576px) {
+/* @media only screen and (max-width: 576px) {
     .nav {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
     }
-}
+} */
 
 #editor-box2 {
     margin-bottom: 30px;
@@ -51,7 +60,7 @@ body {
     font-size: 18px;
 }
 
-.btn {
+#post-btn {
     width: 100%;
     background-color: #ffc141;
 }
