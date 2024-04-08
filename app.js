@@ -92,8 +92,9 @@ loginForm.addEventListener("submit", function(event) {
         loginEmail.style.backgroundColor = "rgb(254 220 220)";
         loginEmail.setAttribute("placeholder", "Incorrect email or password");
     }
-
-    window.location.href = "/homepage.html";
+    else {
+        window.location.href = "/homepage.html";
+    }
 });
 
 
