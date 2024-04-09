@@ -20,7 +20,7 @@ self.addEventListener("install", installEvent => {
       cache.addAll(assets)
     })
   )
-})
+});
 
 self.addEventListener("fetch", fetchEvent => {
     fetchEvent.respondWith(
@@ -28,4 +28,4 @@ self.addEventListener("fetch", fetchEvent => {
         return res || fetch(fetchEvent.request)
       })
     )
-  })
+  });
