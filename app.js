@@ -1,3 +1,12 @@
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function() {
+      navigator.serviceWorker
+        .register("/serviceWorker.js")
+        .then(res => console.log("service worker registered"))
+        .catch(err => console.log("service worker not registered", err))
+    })
+  }
+
 // reg form 
 var regForm = document.getElementById("register-form");
 var regName = document.getElementById("registerName");

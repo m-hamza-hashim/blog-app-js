@@ -1,0 +1,31 @@
+{
+    "name": "Blog App",
+    "short_name": "Blog App",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#ffc141",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "imgs/icons/icon72.png",
+    "type": "images/png", "sizes": "72x72"
+      },
+      {
+        "src": "imgs/icons/icon96",
+        "type": "image/png", "sizes": "96x96"
+      },
+      {
+        "src": "imgs/icons/icon144.png",
+        "type": "image/png", "sizes": "144x144"
+      },
+      {
+        "src": "imgs/icons/icon192.png",
+        "type": "image/png", "sizes": "192x192"
+      },
+      {
+        "src": "imgs/icons/icon512.png",
+        "type": "image/png", "sizes": "512x512"
+      }
+    ]
+  }
